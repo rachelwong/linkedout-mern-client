@@ -31,7 +31,7 @@
   - [Evaluate how effective your knowledge and skills were this project, using examples, and suggest changes or improvements for future projects of a similar nature?](#evaluate-how-effective-your-knowledge-and-skills-were-this-project-using-examples-and-suggest-changes-or-improvements-for-future-projects-of-a-similar-nature)
     - [Open Source Attribution](#open-source-attribution)
 
-### Key Site Assets
+## Key Site Assets
 
 ##### LinkedOut can be found [here](https://linkedout.netlify.com/) 
 ##### Server can be found [here](https://github.com/jackdwalker/mern-assignment-server)
@@ -59,7 +59,7 @@ Operating within the same further-education market, many tertiary education prov
 
 The portal can also incidentally raise the public profile of Coder Academy within the tech industry as a trainer of quality junior developers.
 
-### Functions & Features :clipboard:
+## Functions & Features :clipboard:
 
 * Displays a list of profiles to Guests (non-account holders) and Users (authorised account holders)
 * Guests and users can search for an account by name, tech stack and bio - essentially any text property of a profile
@@ -100,7 +100,7 @@ The portal can also incidentally raise the public profile of Coder Academy withi
 **Error-handling**
 ![404 page](/docs/linkedout/404-screenshot.png)
 
-### Post Project Review
+## Post Project Review
 
 __What we did well__
 
@@ -169,7 +169,7 @@ The web application does store confidential information such as email, names, so
 
 MongoAtlas database that holds the user data already has a number of in-built security features, including end-to-end encryption. 
 
-### Tech Stack :computer:
+## Tech Stack :computer:
 
 * HTML/CSS3 for visual styling the user interface
 * Heroku for hosting the server application
@@ -203,11 +203,11 @@ A start up found based in River City Labs, Brisbane is interested in getting som
 
 A recruiter who regularly attends Women Who Code Melbourne meetup has met a few developer students from Coder Academy. She is looking to broaden her contact networks and she is interested to see what these students are capable of and their tech stack exposure. Unfortunately, she has forgotten their names unfortunately and want to get in touch with them again. 
 
-#### Workflow of Users Journey
+### Workflow of Users Journey
 
 ![Image of User Journey](/docs/Design-process/User_journey.png)
 
-#### Wireframes
+### Wireframes
 
 **Home**
 ![Image of Homescreen](/docs/wireframes/Home&#32;-&#32;public.png)
@@ -236,11 +236,11 @@ A link to the Object Orientated Design Component breakdown can be found [here](/
 
 ## Project Management and Planning 
 
-#### Project Plan and Timeline
+### Project Plan and Timeline
 
 Link to the Gantt Chart used to projected timeframes and planning can be found [here](/docs/GanttChart.xlsx)
 
-#### Client Diary and Communication
+### Client Diary and Communication
 
 [Mr Damian Maclennan](https://twitter.com/DamianM), a consultant CTO based is Brisbane, acts us our project's client, with Coder Academy being the target audience. He came to the project through a twitter broadcast sent by Rachel during the search for projects and clients in term 3. Although we have never met in person, we conducted standups daily with him through Slack, where we discussed project achievements and any persistent technical issues we encountered. 
 
@@ -278,11 +278,11 @@ Link to the Gantt Chart used to projected timeframes and planning can be found [
 * Client was sent questionnaire for feedback on the project 
 * Client advised that he would like to meet to talk about the project as a post project debrief and congratulations on a job well done
 
-#### Project Charter
+### Project Charter
 
 Project Charter can be found [here](/docs/ProjectCharter_signed.pdf)
 
-#### Trello
+### Trello
 
 *image of trello board 1*
 ![image of trello](docs/trello/Screen&#32;Shot&#32;2019-07-16&#32;at&#32;1.57.10&#32;pm.png)
@@ -293,7 +293,7 @@ Project Charter can be found [here](/docs/ProjectCharter_signed.pdf)
 *image of trello board 3*
 ![image of trello](/docs/trello/Screen&#32;Shot&#32;2019-07-22&#32;at&#32;12.03.03&#32;pm.png)
 
-#### Planning and Sprints
+### Planning and Sprints
 
 The project had less than 17 full days to deliver the project, starting from 9 July through to 25 July. The team worked roughly in 3-day sprints, with some room for flexibility. 
 
@@ -328,18 +328,16 @@ The team reported daily to the client, Mr Damian Maclennan via Slack with standu
 * Tighten up documentation including ERD, data flow diagrams, client diary 
 * Conduct product sign off with client 
 
-#### Project requirement Changes
+### Project requirement Changes
 As the project progressed, some adjustments were made to make sure the project deliverables fit within the timeframe and resource limits:
 * The database entity relational diagram was modified from a single ‘User’ table to a one-to-one relationship a ‘User’ model and ‘Student’ model to allow for initial account creation.
 * Some fields including graduation date field, hireable boolean field were removed to streamline the profile design and reduce the number of input fields on the signup form. 
 * The style guide and wireframe designs underwent some visual revisions.
 * At the recommendation of our client Damian MacLennan, we opted to use an external service Gravatar, instead of setting up a dedicated static assets cloud storage (Cloudinary) for uploading avatar images.
 
-#### Source control process
+### Source control process
 
 The server-side and client-side of the web application are stored in separate Github repositories to allow for separate deployment on Heroku (backend) and Netlify(frontend). The team practiced feature-branching workflow where team members build on a local feature branch based on their allocating trello card, commit and push changes to the remote repository before review by another team member prior to merging. 
-
-<img src="https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow" /> 
 
 Merged branches have been retained to evidence work allocation, code reviews to satisfy academic rubric.
 
@@ -351,7 +349,7 @@ The team did experience some issues with git source control
 * just gaining general familiarity with git pulling/pushing commits in a 3-man team scenario.
 * Some work was written over or lost because merge conflicts were not properly resolved in the browser. This was resolved and improved by working with the tutor to identify better workflow procedures for Rachel who did not have sufficient experience with git in team situations. 
 
-#### Product Handover
+### Product Handover
 
 While this project is largely a proof-of-concept, if Coder Academy does wish to proceed to a market-facing product, the team will need to do the following to hand over the current prototype to CA or for outsourcing:
 * Change the account credentials to the deployment services Netlify, Heroku and the MongoAtlas user account. Possibly set up fresh deployments on these services under an Coder Academy account  
@@ -415,7 +413,7 @@ In a prototyping project scenario within a compressed timeframes, it is importan
 
 ### What libraries are being used in the app and why?
 
-##### Front-end Dependencies
+#### Front-end Dependencies
 
 | NPM Package  | Description & usage |
 | ------------- | ------------- |
@@ -431,7 +429,7 @@ In a prototyping project scenario within a compressed timeframes, it is importan
 | Jest | We wanted to use the snapshot testing capabilities in Jest native to Create React App  to ensure the user interface of our web application perform as expected. |
 | React-gravatr | We took advantage of Gravatar as an external service to render an avatar image for the profile page by passing a hashed user email. Gravatar allows users to create a profile including an avatar-image that follows |
   
-##### Back-end dependencies
+#### Back-end dependencies
 
 | NPM Package | Description & usage |
 | ------------- | ------------- |
