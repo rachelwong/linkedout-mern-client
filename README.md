@@ -1,11 +1,6 @@
 ## LinkedOut :sparkles: <!-- omit in toc -->
 
 ### Table of Contents :bookmark_tabs:
-- [Table of Contents :bookmark_tabs:](#table-of-contents-bookmarktabs)
-    - [LinkedOut can be found here](#linkedout-can-be-found-here)
-    - [Server can be found here](#server-can-be-found-here)
-    - [Client repo here](#client-repo-here)
-    - [For advanced server configuration see individual file comments](#for-advanced-server-configuration-see-individual-file-comments)
 - [Functions & Features :clipboard:](#functions--features-clipboard)
   - [Original stretch goals :hatching_chick:](#original-stretch-goals-hatchingchick)
   - [Post Project Review](#post-project-review)
@@ -15,19 +10,14 @@
   - [Workflow of Users Journey](#workflow-of-users-journey)
   - [Wireframes](#wireframes)
   - [Screenshots of LinkedOut MVP](#screenshots-of-linkedout-mvp)
-  - [ERD](#erd)
-  - [DFD](#dfd)
-  - [Object Orientated Design component](#object-orientated-design-component)
+  - [Entity Relational Diagram](#erd)
+  - [Data Flow Diagram](#dfd)
+  - [Object-Orientated Design component](#object-orientated-design-component)
 - [Project Management and Planning](#project-management-and-planning)
   - [Project Plan and Timeline](#project-plan-and-timeline)
   - [Client Diary and Communication](#client-diary-and-communication)
   - [Project Charter](#project-charter)
-  - [Planning](#planning)
-  - [Sprint 1 (2 days)](#sprint-1-2-days)
-  - [Sprint 2](#sprint-2)
-  - [Sprint 3](#sprint-3)
-  - [Sprint 4](#sprint-4)
-  - [Sprint 5](#sprint-5)
+  - [Planning & Sprints](#planning)
   - [Project requirement Changes](#project-requirement-changes)
   - [Source control process](#source-control-process)
   - [Product Handover](#product-handover)
@@ -41,7 +31,7 @@
   - [Evaluate how effective your knowledge and skills were this project, using examples, and suggest changes or improvements for future projects of a similar nature?](#evaluate-how-effective-your-knowledge-and-skills-were-this-project-using-examples-and-suggest-changes-or-improvements-for-future-projects-of-a-similar-nature)
     - [Open Source Attribution](#open-source-attribution)
 
-### Site Assets
+### Key Site Assets
 
 ##### LinkedOut can be found [here](https://linkedout.netlify.com/) 
 ##### Server can be found [here](https://github.com/jackdwalker/mern-assignment-server)
@@ -87,14 +77,27 @@ The portal can also incidentally raise the public profile of Coder Academy withi
 * Only users with an email address with the domain of @coderacademy.edu.au can sign up for an account
 
 
-#### Screenshots of LinkedOut MVP
+### Screenshots of LinkedOut MVP
 
+**Home**
 ![home_screen](/docs/linkedout/home-screenshot.png)
+
+**About**
 ![about screen](/docs/linkedout/about-screenshot.png)
+
+**Login**
 ![login screen](/docs/linkedout/login-screenshot.png)
+
+**View Single Profile**
 ![profile screen](/docs/linkedout/profile-screenshot.png)
+
+**Browse All Profiles**
 ![viewall screen](/docs/linkedout/viewall-screenshot.png)
+
+**Account Sign up**
 ![signup_screen](/docs/linkedout/signup-screenshot.png)
+
+**Error-handling**
 ![404 page](/docs/linkedout/404-screenshot.png)
 
 ### Post Project Review
@@ -102,33 +105,42 @@ The portal can also incidentally raise the public profile of Coder Academy withi
 __What we did well__
 
 *Team Communication*
+
 The team communicated well with the client via daily stand-up via Slack and any problems with development was raised early. 
 
 *MVP Scoping project*
+
 Early wireframes ranged too far beyond the resource capabilities of the team. 
 
 The team was able to trim down to a more achievable product that can still meet MVP resource limits while catering to user needs. 
 
 *Clear Design Vision*
+
 The team discussed the visual direction fairly early in the planning stage. Dribbble and ProductHunt were used primarily in the team's discussion on colour, style, visual elements. 
 
 *Individual programming and Pair programming*
+
 There was an equal combination of individual and pair programming work to build up the codebase. Everyone had an opportunity to learn something from the project experience. 
 
 *Good/equitable work allocation*
+
 With reasonable MVP scoping, work was allocated more-or-less equally amongst team members which meant work progressed at-pace without burn-out. 
 
 *Good time management*
+
 Daily class standups and reporting to the client kept all team members accountable. 
 
 __Lessons Learnt__
 
 *Blocking out work on Trello cards*
+
 Work was identified in far too general terms on trello cards, making it often difficult to move individual cards through from backlog to completion in an efficient manner. This is because each card often involved more moving parts that touched on both the client-side and server-side. For example, a trello card to show profile would require work on React and ExpressJS. 
 
 Learning from this experience, work allocation in future could be improved by:
 * Setting up trello cards for user stories separated by back-end or client-side 
 * Set up additional notes inside individual trello cards identifying all the sub-features required to action it. 
+
+*Technical Proficiency & Problem Solving Skills*
 
 The team could benefit from more time to learn the tech stack and be more comfortable with the basic fundamentals. 
  
@@ -148,9 +160,11 @@ A number of risks were identified and communicated to the client early on in the
 Risks that may specifically affect this prototype application include:
 
 *Cloud services outage*
+
 The project relies on cloud services provided by Netlify, Heroku, MongoAtlas to host the application and underlying database. In the case of outage, the team has identified AWS, Azure as possible alternatives for redeployment. It is not likely that there would be serious outage.
 
 *Data leaks*
+
 The web application does store confidential information such as email, names, social media account URLs. Future expansion of this prototype should look into further securing user input for the forms and storage of data. 
 
 MongoAtlas database that holds the user data already has a number of in-built security features, including end-to-end encryption. 
@@ -165,7 +179,7 @@ MongoAtlas database that holds the user data already has a number of in-built se
 * ReactJS framework for creating the client side application that handles page routing, page rendering, searching 
 * MongoDB and MongoAtlas for the student detail database hosted on the    cloud
 
-### Design Process :paintbrush:
+## Design Process :paintbrush:
 
 #### Style Guide
 
@@ -174,17 +188,20 @@ The font families, font weights, colour palette to be used as standard in the ap
 #### User Stories 
 
 *Coder Academy current student*
+
 Tom is currently studying the Gen Tech stream in Sydney and has been attending hackathons. He is active on the meetup scene and attends classes regularly to keep up with the work. He will be graduating in six months (February 2020). He already has a few linkedin contacts from attending meetups. 
 
 *Coder Academy past student*
+
 Jane graduated from the Fast Track stream in February 2019 and is looking for work either in Melbourne or Sydney. She does have a github account and is working on her own web portfolio. She wants to network with other junior developers to get her name out there.
 
 *Start-up founder*
+
 A start up found based in River City Labs, Brisbane is interested in getting some interns to participate as part of the co-working space’s initiative. He is not sure where to start looking but has heard of the TechBytes event that are regularly held in the same space.  
 
 *Recruiter for software development company in Melbourne*
-A recruiter who regularly attends Women Who Code Melbourne meetup has met a few developer students from Coder Academy. She is looking to broaden her contact networks and she is interested to see what these students are capable of and their tech stack exposure. Unfortunately, she has forgotten their names unfortunately and want to get in touch with them again. 
 
+A recruiter who regularly attends Women Who Code Melbourne meetup has met a few developer students from Coder Academy. She is looking to broaden her contact networks and she is interested to see what these students are capable of and their tech stack exposure. Unfortunately, she has forgotten their names unfortunately and want to get in touch with them again. 
 
 #### Workflow of Users Journey
 
@@ -192,30 +209,32 @@ A recruiter who regularly attends Women Who Code Melbourne meetup has met a few 
 
 #### Wireframes
 
-*Homescreen*
+**Home**
 ![Image of Homescreen](/docs/wireframes/Home&#32;-&#32;public.png)
-*Profile View*
+
+**Profile View**
 ![Image of Profile View page](/docs/wireframes/Student&#32;Profile&#32;View&#32;(public_private).png)
-*Browse Profiles*
+
+**Browse Profiles**
 ![Image of Browse Profile View page](/docs/wireframes/Alternate&#32;Browse&#32;Student&#32;-&#32;(Admin_Private).png)
-*Edit Profile View*
+
+**Edit Profile View**
 ![Image of Edit/Signup View page](/docs/wireframes/Edit&#32;Profile&#32;-STudent.png)
-*Future iteration to include a messenger feature*
+
+**Future iteration to include a messenger feature**
 ![Image of messaging feature for future iteration](/docs/wireframes/Messaging&#32;-&#32;Stretch.png)
 
-#### ERD
-*Entity Relationship Diagram*
+### Entity Relational Diagram
 ![Image of the entity relationship diagram](/docs/Design-process/ERD.png)
 
-#### DFD
-*Data Flow Diagram*
+### Data Flow Diagram
 ![Image of the Data Flow Diagram](/docs/Design-process/New&#32;User&#32;DFD&#32;LinkedOut.png)
 
-#### Object Orientated Design component
+### Object Orientated Design component
 
 A link to the Object Orientated Design Component breakdown can be found [here](/docs/Design-process/OODesign.docx)
 
-### Project Management and Planning 
+## Project Management and Planning 
 
 #### Project Plan and Timeline
 
@@ -274,7 +293,7 @@ Project Charter can be found [here](/docs/ProjectCharter_signed.pdf)
 *image of trello board 3*
 ![image of trello](/docs/trello/Screen&#32;Shot&#32;2019-07-22&#32;at&#32;12.03.03&#32;pm.png)
 
-#### Planning
+#### Planning and Sprints
 
 The project had less than 17 full days to deliver the project, starting from 9 July through to 25 July. The team worked roughly in 3-day sprints, with some room for flexibility. 
 
@@ -324,7 +343,7 @@ The server-side and client-side of the web application are stored in separate Gi
 
 Merged branches have been retained to evidence work allocation, code reviews to satisfy academic rubric.
 
-![git_screen](/docs/linkedout/git-screenshot.png)
+![about screen](/docs/linkedout/git-screenshot.png)
 
 The team did experience some issues with git source control
 * properly manage merge conflicts between commits
@@ -334,7 +353,7 @@ The team did experience some issues with git source control
 
 #### Product Handover
 
-While this project is largely a proof-of-concept, if Coder Academy does wish to proceed to a market-facing product, the team will need to do the following for CA to hand over the current prototype: 
+While this project is largely a proof-of-concept, if Coder Academy does wish to proceed to a market-facing product, the team will need to do the following to hand over the current prototype to CA or for outsourcing:
 * Change the account credentials to the deployment services Netlify, Heroku and the MongoAtlas user account. Possibly set up fresh deployments on these services under an Coder Academy account  
 * There are no static assets generated specifically for this project (i.e. logo, images, fonts)
 * All copyrights and licenses to the codebase can be passed along to the product owner upon sign-off
@@ -342,7 +361,7 @@ While this project is largely a proof-of-concept, if Coder Academy does wish to 
 
 ## Short answer questions
 
-##### What are the most important aspects of quality software?
+### What are the most important aspects of quality software?
 
 ISO/IEC 25000 series of international industry-recognised standards (also known as System and Software Quality Requirements and Evaluation) provides a series of non-functional requirements as guidance on what constitutes quality software. 
 
@@ -351,23 +370,29 @@ ISO/IEC 25000 series of international industry-recognised standards (also known 
 Some high-level quality attributes in brief include: 
 
 __Performance__
+
 This refers to how well a piece of software performs a certain number intended functions over a period of time under a spectrum of operating environment factors and testing heuristics. Some things to consider include average page load time, how long does it take for the server to respond, how many users can be logged into a system at the same time. 
  
 __Interoperability__
+
 Interoperability refers to the ability of an application or software to interact with other systems, such as external APIs, cloud services, deployment platforms. For example, in this assignment, the team discovered that the React client-end application is better suited for deployment on Netlify while the NodeJS application is better suited for Heroku. 
 
 Development teams need to consider factors such as handling and interpolating different data formats returned from external APIs (i.e. gravatar), managing future changes and legacy compatibility of external services and products (i.e. hosting platforms). 
 
 __Usability__
+
 A quality application or software should not only have features that cater for target demographic, but also accommodate user devices (i.e. responsiveness, browsers), accessibility. This is where scoping for MVP functionalities, market research and an understanding of industry best practices will be essential.  
 
 __Reliability/Availability__
+
 This criteria refers to a system or a software’s ability to operate under predefined conditions, particularly factors that could lead to latency, system compromises, downtime, failed network connections. 
 
 __Security__
+
 A software -- particularly an application like this project that stores sensitive data such as security credentials, user details -- must be able to protect against accidental or intentional loss of data (i.e. DDOS, restricting unauthorised user access to certain resources, admin rights)
 
 __Maintainability/Scalability (Reducing technical debt)__
+
 Codebase that is built with maintainability and scalability in mind means that it would be easier and cost effective to change functionalities to accommodate customer or business needs over time. It would also be easier to onboard new developers to the project if the codebase follows best practices, recommended linting guidelines. 
 
 Setting down the Minimum Viable Product functionalities and features is important to building quality software because 
@@ -376,6 +401,7 @@ Setting down the Minimum Viable Product functionalities and features is importan
 * The functions can be improved upon and even expanded based on the feedback on the focussed set of functionalities built, rather than combating scope creep.  
  
 __Test Driven Development__
+
 * Having short development cycles and regular testing - build, refactor and test -  means the coding satisfies specification, use cases -- essentially does what it’s supposed to do.
 * Ensures best coding practices are followed 
 * Reduce bugs, unexpected outputs.
@@ -387,12 +413,11 @@ In a prototyping project scenario within a compressed timeframes, it is importan
 * The user feedback loop is tighter which in turn allows for more tweaks to features 
 * Early deployment means problems and deficiencies can be identified early
 
-#### What libraries are being used in the app and why?
+### What libraries are being used in the app and why?
 
 ##### Front-end Dependencies
 
-
-| NPM Package  | Description |
+| NPM Package  | Description & usage |
 | ------------- | ------------- |
 | React-router-dom | Sets up routes, nested routes to allow user to traverse to different parts of the react application. It binds routes to the Document Object Model (browser tree). This allows us to set up routes within the react-side of the application. |
 | Bulma | An open-source CSS component framework with fixed styles and appearances for the most commonly used components of a web application (i.e. forms, buttons, lists, cards). Using a pre-existing CSS framework shortened our development time and we were able to quickly prototype different visual looks to UI within the compressed two-week timeframe. |
@@ -408,7 +433,7 @@ In a prototyping project scenario within a compressed timeframes, it is importan
   
 ##### Back-end dependencies
 
-| First Header  | Second Header |
+| NPM Package | Description & usage |
 | ------------- | ------------- |
 | Dotenv | We used a `.env` file to store environment variables such as API keys, MongoDB connection strings, jwt secrets and deployment variables. The `.env` file is hidden from public git using `.gitignore` and this package enables the deployed application to access the secured information inside `.env`. |
 | Body-parser | A middleware package that exposes data in an incoming request stream as `req.body` in forms such as the signup, edit profile and log in pages. This package is essential for this application as the server will send POST requests from the forms to the MongoDB database. |
@@ -425,7 +450,7 @@ In a prototyping project scenario within a compressed timeframes, it is importan
 | Super Test | Super test is a node module that allows you to test API endpoints by making HTTP requests. |
 | Nodemon | Nodemon is used to detect changes to the server source code and restart the server.|
   
-#### A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
+### A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
 
 To develop a functional product to fulfil business needs and end-user preferences, a team needs a balance of business development skills, project management and technical proficiency. 
 
@@ -444,18 +469,18 @@ __Business Development Skills__
 * Market research and user needs discovery
 * Understanding prevailing trends on what the tech industry looks for in junior graduates, the profile of Coder Academy student cohorts, and the overall business direction for Coder Academy helped the team flesh out the MVP functionalities - what information should the student profile contain, style guide and visual direction, to name a few.
 
-__Client liaison to ensure everyone has shared understanding of delivery on expectations__
+__Client liaison__
 * The team kept the client regularly updated on project progress, difficulties and roadblocks with daily standups. 
 * The client was also able to provide workaround solutions to roadblocks, for example Damian suggested the Gravatar service when the team experienced persistent issues with setting up a Cloudinary connection with the NodeJS server.
 
-__Project management (both technical and client) Skills__
+__Project management__
 * Ability to identify resource-appropriate MVP features
 * Recognise and constrain scope creep of MVP features as development and discussions with client progress 
 * Documenting “nice-to-have” features, identify extensible features (unresolved issues) for future improvement
 * Equally distribute work amongst team members, and keeping track of time spent on a specific feature or problem.
 * Communication skills to mesh well with team member personalities, different communication styles and work practices. 
 
-#### Within your own project what knowledge or skills were required to complete your project, and overcome challenges?
+### Within your own project what knowledge or skills were required to complete your project, and overcome challenges?
 
 __Jack__
 
@@ -480,12 +505,14 @@ Becoming comfortable using testing frameworks was the main challenge in my porti
 __Rachel__
 
 *Debugging*
+
 I needed an efficient means of researching for solutions to coding problems following previous assignment. Knowing the right search terminology, trial & error, pair programming and having a good grasp of fundamentals should help toward the debugging process. 
 
 *Learning basic concepts in compressed scenarios*
+
 Just like previous assessments, the pace and timeframe means learning basic concepts will have to happen at the same time as building the assignment. This assignment is especially challenging as I came to the team with very poor understanding of classwork. 
 
-#### Evaluate how effective your knowledge and skills were this project, using examples, and suggest changes or improvements for future projects of a similar nature?
+### Evaluate how effective your knowledge and skills were this project, using examples, and suggest changes or improvements for future projects of a similar nature?
 
 __Jack__
 
@@ -512,7 +539,7 @@ For future projects, I would like to bring to the table a better understanding o
 
 Alternatively, build in sufficient buffer in the project timeline to allow for directed learning and general trial & error. This means I can help deliver a more well-considered product rather than a slipshod effort that may accrue technical debt down the track. 
 
-##### Open Source Attribution
+## Open Source Attribution
 
 Aside from npm packages and library dependencies, the team credits the following open-source resources.
 
