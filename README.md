@@ -63,9 +63,9 @@ To set up a development environment on your local computer
 
 Coder Academy has been teaching students full-stack web development in Australia for approximately three years, and the Brisbane campus is its latest expansion. In this period, the organisation has built up a reputation within the local tech scene for graduating job-ready junior developers.
 
-Operating within the same further education market, many tertiary education providers often hold graduate showcases and exhibitions to display what students have achieved in the course of their studies. The Academy at present does not have any external-facing resource that formally showcases its graduating cohort. Graduates instead rely on their own portfolio work, class assessments and reaching out to companies in an ad hoc fashion via meetups, social media and internship interviews.
+Operating within the same further-education market, many tertiary education providers often hold graduate showcases and exhibitions to display what students have achieved in the course of their studies. The Academy at present does not have any external-facing resource that formally showcases its graduating cohort. Graduates instead rely on their own portfolio work, class assessments and reaching out to companies in an ad hoc fashion via meetups, social media and internship interviews.
 
-Our MERN assignment project therefore aims to deliver a minimal viable product (MVP) that prototypes a professional platform for students to present their best work to prospective employers with the view of securing internship opportunities. 
+*Our MERN assignment project therefore aims to deliver a minimal viable product (MVP) that prototypes a professional platform for students to present their best work to prospective employers with the view of securing internship opportunities.*
 
 The portal can also incidentally raise the public profile of Coder Academy within the tech industry as a trainer of quality junior developers.
 
@@ -94,6 +94,7 @@ The portal can also incidentally raise the public profile of Coder Academy withi
 ![login screen](/docs/linkedout/login-screenshot.png)
 ![profile screen](/docs/linkedout/profile-screenshot.png)
 ![viewall screen](/docs/linkedout/viewall-screenshot.png)
+![signup_screen](/docs/linkedout/signup-screenshot.png)
 ![404 page](/docs/linkedout/404-screenshot.png)
 
 ### Post Project Review
@@ -222,9 +223,7 @@ Link to the Gantt Chart used to projected timeframes and planning can be found [
 
 #### Client Diary and Communication
 
-[Mr Damian Maclennan](https://twitter.com/DamianM), a consultant CTO based is Brisbane, acts us our project's client, with Coder Academy being the target audience. He came to the project through a twitter broadcast sent by Rachel during the search for projects and clients in term 3. He 
-
-Although we have never met in person, we conducted standups daily with him through Slack, where we discussed project achievements and any persistent technical issues we encountered.
+[Mr Damian Maclennan](https://twitter.com/DamianM), a consultant CTO based is Brisbane, acts us our project's client, with Coder Academy being the target audience. He came to the project through a twitter broadcast sent by Rachel during the search for projects and clients in term 3. Although we have never met in person, we conducted standups daily with him through Slack, where we discussed project achievements and any persistent technical issues we encountered. 
 
 *Day 1*
 * Discuss with client what the brief would be and decide on MVP
@@ -246,7 +245,6 @@ Although we have never met in person, we conducted standups daily with him throu
 * Advised client that a prelim server and front end has been deployed 
 * CLient advised that he couldn't see any red flags going forward at this stage 
   
-
 *Day 6*
 * Client advised that Trello needed to be updated and that the team should discuss the work going forward to ensure the work was being allocated
 * Client also advised the use of Gravatar over Cloundinary which we took up 
@@ -283,33 +281,33 @@ The project had less than 17 full days to deliver the project, starting from 9 J
 The team reported daily to the client, Mr Damian Maclennan via Slack with standups discussing progress made, the day’s backlog and any roadblocks. The team also reported to the class using a physical kanban board. 
 
 *Sprint 1 (2 days)*
-Identifying business need - What is a gap within the Coder Academy graduate placement program that a web application can help solve. 
-Liaising with client, Mr Damian Maclennan
-Wireframes and construct user stories → map out user journeys
-Develop a data flow diagram as a map of API calls, routing - basically how the whole application functions together
+* Identifying business need - What is a gap within the Coder Academy graduate placement program that a web application can help solve. 
+* Liaising with client, Mr Damian Maclennan
+* Wireframes and construct user stories → map out user journeys
+* Develop a data flow diagram as a map of API calls, routing - basically how the whole application functions together
 
 *Sprint 2* 
-Work on initial deployment to get basic routes working from server through to client-side and to deploy both on separate platforms. 
-Develop project charter and achieve sign-off
-Research on visual inspiration on the market and set up a style guide
+* Work on initial deployment to get basic routes working from server through to client-side and to deploy both on separate platforms. 
+* Develop project charter and achieve sign-off
+* Research on visual inspiration on the market and set up a style guide
 
 *Sprint 3*
-Configure user account authentication on express JS to allow user sign up, log-in functionalities
-Construct and design front-end react components using Bulma css framework
-Research and Build on documentation
+* Configure user account authentication on express JS to allow user sign up, log-in functionalities
+* Construct and design front-end react components using Bulma css framework
+* Research and Build on documentation
 
 *Sprint 4*
-Construct and design front-end react components using Bulma css framework
-Configure data interpolation to populate profiles with user data
-Configured a global, case-insensitive search profile function
-Enable edit profile and delete functionalities
-Conduct testing across both front and back end functionalities
-Research and Build on documentation
+* Construct and design front-end react components using Bulma css framework
+* Configure data interpolation to populate profiles with user data
+* Configured a global, case-insensitive search profile function
+* Enable edit profile and delete functionalities
+* Conduct testing across both front and back end functionalities
+* Research and Build on documentation
 
 *Sprint 5*
-Final Debugging and testing
-Tighten up documentation including ERD, data flow diagrams, client diary 
-Conduct product sign off with client 
+* Final Debugging and testing
+* Tighten up documentation including ERD, data flow diagrams, client diary 
+* Conduct product sign off with client 
 
 #### Project requirement Changes
 As the project progressed, some adjustments were made to make sure the project deliverables fit within the timeframe and resource limits:
@@ -322,7 +320,7 @@ As the project progressed, some adjustments were made to make sure the project d
 
 The server-side and client-side of the web application are stored in separate Github repositories to allow for separate deployment on Heroku (backend) and Netlify(frontend). The team practiced feature-branching workflow where team members build on a local feature branch based on their allocating trello card, commit and push changes to the remote repository before review by another team member prior to merging. 
 
-Image courtesy of Atlassian (https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow) 
+<img src="https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow" /> 
 
 Merged branches have been retained to evidence work allocation, code reviews to satisfy academic rubric.
 
@@ -348,7 +346,7 @@ While this project is largely a proof-of-concept, if Coder Academy does wish to 
 
 ISO/IEC 25000 series of international industry-recognised standards (also known as System and Software Quality Requirements and Evaluation) provides a series of non-functional requirements as guidance on what constitutes quality software. 
 
-Image courtesy of http://iso25000.com/index.php/en/iso-25000-standards/iso-25010?source=post_page--------------------------- 
+<img src="http://iso25000.com/images/figures/en/iso25010.png" />
 
 Some high-level quality attributes in brief include: 
 
@@ -396,64 +394,36 @@ In a prototyping project scenario within a compressed timeframes, it is importan
 
 | NPM Package  | Description |
 | ------------- | ------------- |
-| React-router-dom  | Sets up routes, nested routes to allow user to traverse to different parts of the react application. It binds routes to the Document Object Model (browser tree). This allows us to set up routes within the react-side of the application.
-  |
-| Bulma  | An open-source CSS component framework with fixed styles and appearances for the most commonly used components of a web application (i.e. forms, buttons, lists, cards). Using a pre-existing CSS framework shortened our development time and we were able to quickly prototype different visual looks to UI within the compressed two-week timeframe. 
-  |
-| Bloomer  | A set of open-source set of React components that are extended from the Bulma framework that further shortened our development time by passing HTML/CSS of Bulma. This allows us to make only focussed changes in SCSS to tailor the framework to our styleguide. 
-  |
-| Dotenv  | Enables the use of a “.env” file to store credentials such as mongoDB path and deployment variables. Ideally we should use .env to store the jwt secret as well for decoding authentication tokens and payloads. 
-  |
-| Font awesome  | We used the open-source font-awesome suite of icons for logo and user interface on the react-side of the application. 
-  |
-| Node-sass  | Node-sass package works in tandem with the bloomer packages to allow writing custom styles over the existing bulma framework. This is essential for bloomer to work on our client-side of the application. 
-  |
-| Axios  | This package handles requests between the client-side (React) and the NodeJS server.
-  |
-| Moxios  | Mocking the axios tests without actually hitting the API endpoints. For example, this was used to test logging using test user data. 
-  |
-| Enzyme  | We used this javascript testing framework to test whether the output for React components we used in our web application.
-  |
-| Jest  | We wanted to use the snapshot testing capabilities in Jest native to Create React App  to ensure the user interface of our web application perform as expected. 
-  |
-| React-gravatr  | We took advantage of Gravatar as an external service to render an avatar image for the profile page by passing a hashed user email. Gravatar allows users to create a profile including an avatar-image that follows 
-  |
+| React-router-dom | Sets up routes, nested routes to allow user to traverse to different parts of the react application. It binds routes to the Document Object Model (browser tree). This allows us to set up routes within the react-side of the application. |
+| Bulma | An open-source CSS component framework with fixed styles and appearances for the most commonly used components of a web application (i.e. forms, buttons, lists, cards). Using a pre-existing CSS framework shortened our development time and we were able to quickly prototype different visual looks to UI within the compressed two-week timeframe. |
+| Bloomer | A set of open-source set of React components that are extended from the Bulma framework that further shortened our development time by passing HTML/CSS of Bulma. This allows us to make only focussed changes in SCSS to tailor the framework to our styleguide.|
+| Dotenv | Enables the use of a “.env” file to store credentials such as mongoDB path and deployment variables. Ideally we should use .env to store the jwt secret as well for decoding authentication tokens and payloads.|
+| Font awesome | We used the open-source font-awesome suite of icons for logo and user interface on the react-side of the application. |
+| Node-sass | Node-sass package works in tandem with the bloomer packages to allow writing custom styles over the existing bulma framework. This is essential for bloomer to work on our client-side of the application.|
+| Axios | This package handles requests between the client-side (React) and the NodeJS server.|
+| Moxios | Mocking the axios tests without actually hitting the API endpoints. For example, this was used to test logging using test user data. |
+| Enzyme | We used this javascript testing framework to test whether the output for React components we used in our web application.|
+| Jest | We wanted to use the snapshot testing capabilities in Jest native to Create React App  to ensure the user interface of our web application perform as expected. |
+| React-gravatr | We took advantage of Gravatar as an external service to render an avatar image for the profile page by passing a hashed user email. Gravatar allows users to create a profile including an avatar-image that follows |
   
 ##### Back-end dependencies
 
 | First Header  | Second Header |
 | ------------- | ------------- |
-| Dotenv  | We used a `.env` file to store environment variables such as API keys, MongoDB connection strings, jwt secrets and deployment variables. The `.env` file is hidden from public git using `.gitignore` and this package enables the deployed application to access the secured information inside .env.
-  |
-| Body-parser  | A middleware package that exposes data in an incoming request stream as `req.body` in forms such as the signup, edit profile and log in pages. This package is essential for this application as the server will send POST requests from the forms to the MongoDB database.
-  |
-| Cookie-parser  | We used this middleware package to enables cookies to be persisted on client requests. Once a JWT token has been created a cookie is registered on the browser headers, which allows our authenticated user to remain logged in (open a session) on the application for a stipulated period of time.
-  |
-| Cors  | Cors (Cross Origin Resource Sharing) is a middleware package that allows the browser and server to interact and request for resources outside of their origin (cross-origin requests). It specifies which origins can safely access assets on the server and through which routes.
-
-During testing, a resource such as appending https://cors-anywhere.herokuapp.com/ to the front of the URL of any fetch or axios request is also possible.
-
-  |
-| Js-md5  | We used JS-MD5 to encrypt user email to gravatar. MD5 is not a dependency for Gravatar. 
-  |
-| ExpressJS  | Our project’s server is built upon the open-source web application framework that runs on the NodeJS runtime environment.
-  |
-| Jsonwebtoken  | We used this npm package created by Auth0 to enables site authentication, authorisation by generating a ‘token’ that is encrypted with a JWT secret, includes a payload of user information (i.e id, username)
-  |
-| Morgan  | Morgan is used for us for logging HTTP request details automatically from server, such as request logs. It helps us save time from manually create and standardize common logs. 
-  |
-| Passport  | Authentication middleware for NodeJS runtime environment. It uses “strategy” to authenticate requests and serialises users to maintain persistent sessions on the application. It works in tandem with passport-jwt and passport-local-mongoose to manage registration, logging in and out.
-  |
-| Passport-jwt  | Works in tandem with passport npm package to authenticate endpoints.
-  |
-| Passport-local-mongoose  | A mongoose plugin that works between Passport and Mongoose packages
-  |
-| Mongoose  | Mongoose provides modelling (schema, model) to work with data stored in MongoDB. Mongoose uses object data model that represents data as Javascript objects and then mapped to the underlying Mongo database.
-  |
-| Super Test  | Super test is a node module that allows you to test API endpoints by making HTTP requests. 
-  |
-| Nodemon  | Nodemon is used to detect changes to the server source code and restart the server. 
-  |
+| Dotenv | We used a `.env` file to store environment variables such as API keys, MongoDB connection strings, jwt secrets and deployment variables. The `.env` file is hidden from public git using `.gitignore` and this package enables the deployed application to access the secured information inside `.env`. |
+| Body-parser | A middleware package that exposes data in an incoming request stream as `req.body` in forms such as the signup, edit profile and log in pages. This package is essential for this application as the server will send POST requests from the forms to the MongoDB database. |
+| Cookie-parser | We used this middleware package to enables cookies to be persisted on client requests. Once a JWT token has been created a cookie is registered on the browser headers, which allows our authenticated user to remain logged in (open a session) on the application for a stipulated period of time. |
+| Cors | Cors (Cross Origin Resource Sharing) is a middleware package that allows the browser and server to interact and request for resources outside of their origin (cross-origin requests). It specifies which origins can safely access assets on the server and through which routes. During testing, a resource such as appending https://cors-anywhere.herokuapp.com/ to the front of the URL of any fetch or axios request is also possible. |
+| Js-md5 | We used JS-MD5 to encrypt user email to gravatar. MD5 is not a dependency for Gravatar. |
+| ExpressJS | Our project’s server is built upon the open-source web application framework that runs on the NodeJS runtime environment. |
+| Jsonwebtoken | We used this npm package created by Auth0 to enables site authentication, authorisation by generating a ‘token’ that is encrypted with a JWT secret, includes a payload of user information (i.e id, username) |
+| Morgan | Morgan is used for us for logging HTTP request details automatically from server, such as request logs. It helps us save time from manually create and standardize common logs. |
+| Passport | Authentication middleware for NodeJS runtime environment. It uses “strategy” to authenticate requests and serialises users to maintain persistent sessions on the application. It works in tandem with passport-jwt and passport-local-mongoose to manage registration, logging in and out.|
+| Passport-jwt | Works in tandem with passport npm package to authenticate endpoints.|
+| Passport-local-mongoose | A mongoose plugin that works between Passport and Mongoose packages|
+| Mongoose | Mongoose provides modelling (schema, model) to work with data stored in MongoDB. Mongoose uses object data model that represents data as Javascript objects and then mapped to the underlying Mongo database.|
+| Super Test | Super test is a node module that allows you to test API endpoints by making HTTP requests. |
+| Nodemon | Nodemon is used to detect changes to the server source code and restart the server.|
   
 #### A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
 
@@ -545,6 +515,9 @@ Alternatively, build in sufficient buffer in the project timeline to allow for d
 ##### Open Source Attribution
 
 Aside from npm packages and library dependencies, the team credits the following open-source resources.
-* __Bulma & Bloomer__: The user interface of the application relied on the pre-styled CSS and design of these css framework and react components. 
-* __Google Fonts__: Montserrat and Raleway were used for the text of the web application
-* __Undraw__: SVG illustrations were used as graphics.
+
+| Resource  | Description and Usage |
+| ------------- | ------------- |
+| __Bulma & Bloomer__  | The user interface of the application relied on the pre-styled CSS and design of these css framework and react components. |
+| __Google Fonts__ | Montserrat and Raleway were used for the text of the web application  |
+| __Undraw__  | SVG illustrations were used as graphics. |
