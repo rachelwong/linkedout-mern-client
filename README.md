@@ -31,45 +31,6 @@
   - [Evaluate how effective your knowledge and skills were this project, using examples, and suggest changes or improvements for future projects of a similar nature?](#evaluate-how-effective-your-knowledge-and-skills-were-this-project-using-examples-and-suggest-changes-or-improvements-for-future-projects-of-a-similar-nature)
     - [Open Source Attribution](#open-source-attribution)
 
-
-
-
-### Table of Contents :bookmark_tabs:
-=================
-         * [Problem Definition &amp; Purpose <g-emoji class="g-emoji" alias="bulb" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a1.png">💡</g-emoji>](#problem-definition--purpose-bulb)
-      * [Functions &amp; Features <g-emoji class="g-emoji" alias="clipboard" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4cb.png">📋</g-emoji>](#functions--features-clipboard)
-            * [Stretch goals <g-emoji class="g-emoji" alias="hatching_chick" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f423.png">🐣</g-emoji>](#stretch-goals-hatching_chick)
-         * [Screenshots of MVP](#screenshots-of-linkedout-mvp)
-      * [Post Project Review](#post-project-review)
-      * [Tech Stack <g-emoji class="g-emoji" alias="computer" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4bb.png">💻</g-emoji>](#tech-stack-computer)
-      * [Design Process <g-emoji class="g-emoji" alias="paintbrush" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f58c.png">🖌</g-emoji>](#design-process-paintbrush)
-            * [Style Guide](#style-guide)
-            * [User Stories](#user-stories)
-         * [Workflow of Users Journey](#workflow-of-users-journey)
-         * [Wireframes](#wireframes)
-         * [Entity Relational Diagram](#entity-relational-diagram)
-         * [Data Flow Diagram](#data-flow-diagram)
-         * [Object Orientated Design component](#object-orientated-design-component)
-      * [Project Management and Planning](#project-management-and-planning)
-         * [Project Plan and Timeline](#project-plan-and-timeline)
-         * [Client Diary and Communication](#client-diary-and-communication)
-         * [Project Charter](#project-charter)
-         * [Trello](#trello)
-         * [Planning and Sprints](#planning-and-sprints)
-         * [Project requirement Changes](#project-requirement-changes)
-         * [Source control process](#source-control-process)
-         * [Product Handover](#product-handover)
-      * [Short answer questions](#short-answer-questions)
-         * [What are the most important aspects of quality software?](#what-are-the-most-important-aspects-of-quality-software)
-         * [What libraries are being used in the app and why?](#what-libraries-are-being-used-in-the-app-and-why)
-            * [Front-end Dependencies](#front-end-dependencies)
-            * [Back-end dependencies](#back-end-dependencies)
-         * [A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?](#a-team-is-about-to-engage-in-a-project-developing-a-website-for-a-small-business-what-knowledge-and-skills-would-they-need-in-order-to-develop-the-project)
-         * [Within your own project what knowledge or skills were required to complete your project, and overcome challenges?](#within-your-own-project-what-knowledge-or-skills-were-required-to-complete-your-project-and-overcome-challenges)
-         * [Evaluate how effective your knowledge and skills were this project, using examples, and suggest changes or improvements for future projects of a similar nature?](#evaluate-how-effective-your-knowledge-and-skills-were-this-project-using-examples-and-suggest-changes-or-improvements-for-future-projects-of-a-similar-nature)
-      * [Open Source Attribution](#open-source-attribution)
-
-
 ## Key Site Assets
 
 ##### LinkedOut can be found [here](https://linkedout.netlify.com/) 
